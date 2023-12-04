@@ -13,13 +13,15 @@ for letter in raw_massage_list:  # 运行加密算法
             pwd_index = index_alphabet + 2  # 使用索引位移实现字符位移
             pwd_letter = alphabet[pwd_index].upper()
             raw_massage_list[index_rml] = pwd_letter
-        else:
+        elif letter.islower():
             index_rml = raw_massage_list.index(letter)
             index_alphabet = alphabet.index(letter)
             pwd_index = index_alphabet + 2
             pwd_letter = alphabet[pwd_index]
             raw_massage_list[index_rml] = pwd_letter
-        pwd.append(pwd_letter)
+            pwd.append(pwd_letter)
+        else:  # 处理非英文字母
+            pwd.append(letter)
     else:
         pwd.append(letter)
 
