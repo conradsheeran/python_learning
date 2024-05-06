@@ -20,19 +20,19 @@ else:
     if (x1 - math.trunc(x1) == 0) and (x2 - math.trunc(x2) == 0):
         x1 = int(x1)
         x2 = int(x2)
-        print(f"{a}x^2+{b}y+{c}=0 该方程有两个实数根，分别为{x1}，{x2}")
+        print(f"{a}x^2+{b}y+{c}=0 该方程有两个实数根，分别为{x1}, {x2}")
     elif (x1 - math.trunc(x1) != 0) and (x2 - math.trunc(x2) != 0):
         x1 = round(x1, 2)
         x2 = round(x2, 2)
-        print(f"{a}x^2+{b}y+{c}=0 该方程有两个实数根，分别为{x1}，{x2}")
+        print(f"{a}x^2+{b}y+{c}=0 该方程有两个实数根，分别为{x1}, {x2}")
     else:
         if x1 - math.trunc(x1) != 0:
             x1 = round(x1, 2)
             x2 = int(x2)
-            print(f"{a}x^2+{b}y+{c}=0 该方程有两个实数根，分别为{x1}，{x2}")
+            print(f"{a}x^2+{b}y+{c}=0 该方程有两个实数根，分别为{x1}, {x2}")
         else:
             x1 = int(x1)
             x2 = round(x2, 2)
-            print(f"{a}x^2+{b}y+{c}=0 该方程有两个实数根，分别为{x1}，{x2}")
+            print(f"{a}x^2+{b}y+{c}=0 该方程有两个实数根，分别为{x1}, {x2}")
 
 input("---请输入 Enter 键退出---")
